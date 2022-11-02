@@ -1,0 +1,1 @@
+#sudo nvidia-docker run --net=host --runtime nvidia --rm --ipc=host -v /tmp/.X11-unix/:/tmp/.X11-unix/ -v /tmp/argus_socket:/tmp/argus_socket --privileged -v /dev:/dev --privileged -v /home/parking-cam-2/images/:/root/parking_lot_classification/image/ -v /home/parking-cam-2/logs:/root/parking_lot_classification/logs/ --cap-add SYS_PTRACE -e DISPLAY= -d parking
